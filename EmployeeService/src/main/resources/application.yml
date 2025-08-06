@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: EmployeeService
+  data:
+    mongodb:
+      uri: mongodb+srv://springstudent:springstudent@first-cluster.vuamnew.mongodb.net/?retryWrites=true&w=majority
+      database: employee-db
