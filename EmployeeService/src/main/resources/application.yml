@@ -3,5 +3,5 @@ spring:
     name: EmployeeService
   data:
     mongodb:
-      uri: mongodb+srv://springstudent:springstudent@first-cluster.vuamnew.mongodb.net/?retryWrites=true&w=majority
+      uri: ${MONGODB.CLUSTER.URI}
       database: employee-db
