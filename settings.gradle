@@ -1,4 +1,4 @@
-rootProject.name = 'ReactiveStreamsDemo'
+rootProject.name = 'ReactiveStreamsDemoApplication'
 
 include 'EmployeeService'
 include 'EmployeeWebClientConsumer'
