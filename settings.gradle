@@ -1,0 +1,4 @@
+rootProject.name = 'ReactiveStreamsDemo'
+
+include 'EmployeeService'
+include 'EmployeeWebClientConsumer'
