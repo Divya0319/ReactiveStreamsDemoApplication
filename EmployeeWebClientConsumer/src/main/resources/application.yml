@@ -8,17 +8,17 @@ server:
 api:
   common:
     version: 1.0.0
-    title: Sample API
-    description: Description of the API...
-    termsOfService: MY TERMS OF SERVICE
-    license: MY LICENSE
-    licenseUrl: MY LICENSE URL
-    externalDocDesc: MY WIKI PAGE
-    externalDocUrl: MY WIKI URL
+    title: Employee Client API
+    description: APIs built to test Reactive calls using WebClient
+    termsOfService: https://sites.google.com/view/employeerestapitos/home
+    license: Apache License
+    licenseUrl: https://github.com/Divya0319/ReactiveStreamsDemoApplication/blob/main/LICENSE
+    externalDocDesc: Spring Boot Documentation
+    externalDocUrl: https://docs.spring.io/spring-boot/index.html
     contact:
-      name: NAME OF CONTACT
-      url: URL TO CONTACT
-      email: contact@mail.com
+      name: Divya Gupta
+      url: https://codewithdivya.tech
+      email: divygupta0319@gmail.com
 
   responseCodes:
     ok.description: OK
@@ -27,10 +27,10 @@ api:
     unprocessableEntity.description: Unprocessable entity, input parameters caused the processing to fail. See response message for more information
   employee-client:
     get-all-employees:
-      description: Returns a composite view of the specified product id
+      description: Returns all employees created in MongoDB instance
       notes: |
         # Normal response
-        If the requested product id is found the method will return information
+        If the requested employee id is found the method will return information
         regarding:
           1. Base product information
           1. Reviews
@@ -44,7 +44,7 @@ api:
         200 - Ok, but no recommendations will be returned
         ## Product id 213
         200 - Ok, but no reviews will be returned
-        ## Non-numerical product id
+        ## Non-numerical employee id
         400 - A **Bad Request** error will be returned
         ## Product id 13
         404 - A **Not Found** error will be returned
@@ -53,10 +53,10 @@ api:
         422 - An **Unprocessable Entity** error will be returned
 
     create-employee:
-      description: Returns a composite view of the specified product id
+      description: Creates a new employee in MongoDB instance
       notes: |
         # Normal response
-        If the requested product id is found the method will return information
+        If the requested employee id is found the method will return information
         regarding:
           1. Base product information
           1. Reviews
@@ -70,7 +70,7 @@ api:
         200 - Ok, but no recommendations will be returned
         ## Product id 213
         200 - Ok, but no reviews will be returned
-        ## Non-numerical product id
+        ## Non-numerical employee id
         400 - A **Bad Request** error will be returned
         ## Product id 13
         404 - A **Not Found** error will be returned
